@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bankingapplication.LoginFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/drawerMenu">
+        <!--        app:layout_constraintTop_toTopOf="parent"-->
+        <!--        tools:layout_editor_absoluteX="0dp">-->
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="80dp"
+            android:autofillHints=""
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+            android:textColorHint="@color/black"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/edt_username"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="80dp"
+            android:autofillHints=""
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:singleLine="false"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_username" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/txt_account_msg"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/edt_password"-->
+        <!--            android:layout_alignParentStart="true"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_marginStart="125dp"-->
+        <!--            android:layout_marginTop="38dp"-->
+        <!--            android:layout_marginEnd="127dp"-->
+        <!--            android:layout_marginBottom="443dp"-->
+        <!--            android:text="@string/no_account"-->
+        <!--            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"-->
+        <!--            android:textColor="@android:color/black"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/btn_login" />-->
+
+
+        <TextView
+            android:id="@+id/btn_reset_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_password"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="124dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:text="Forgot your password?"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/chk_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/edt_password"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="123dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="1dp"
+            android:minHeight="48dp"
+            android:text="@string/remember"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chk_remember"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="96dp"
+            android:background="@drawable/rounded_rectangel"
+            android:text="@string/login"
+            android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+        <Button
+            android:id="@+id/btn_create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_login"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="99dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="109dp"
+            android:background="@drawable/rounded_rectangel"
+            android:text="@string/create_account"
+            android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+        <!--        <Button-->
+<!--            android:id="@+id/btn_login_admin"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignBottom="@+id/edt_password"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginEnd="17dp"-->
+<!--            android:layout_marginBottom="140dp"-->
+<!--            android:background="@drawable/rounded_rectangel"-->
+<!--            android:text="Login admin"-->
+<!--            android:textAppearance="@android:style/TextAppearance.Holo.Medium"-->
+<!--            android:textColor="#000000"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/edt_password" />-->
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
